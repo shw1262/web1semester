@@ -1,0 +1,44 @@
+body {
+	background-color: white;
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 2px dotted black;
+	padding: 5px 5px 5px 5px;
+	font-family: sans-serif;
+}
+
+
+div.menuitem {
+	display: flex;
+	height: 9em;
+}
+
+div.menuitem h2 {
+	display: flex;
+	width: 200m;
+	background-color: pink;
+	padding-right: 3em;
+}
+
+div.menuitem p {
+	width: 120%;
+	font-size: 14pt;
+	display: none;/*평소에는 안 드러나게!*/
+}
+
+
+div.menuitem p img {
+	float: left;
+	margin: 3px 30px 3px 60px;
+}
+/*p는 디스플레이에 없으므로 호버 해도 소용 없다*/
+
+div.menuitem h2:hover {
+	color: brown;
+	background-color: yellow;
+	/*이 타이밍에만 그림이 드러나도록!*/
+}
+
+div.menuitem:hover p {
+		display: flex;
+}
